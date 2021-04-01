@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body class="root">
+    <div class="main-container">
+    </div>
+</body>
+<script>
+    const body = document.querySelector(".root")
+    const mainDiv = document.querySelector(".main-container")
+    const mainHeader = document.createElement("h1")
+    mainHeader.className = "main-header"
+    mainHeader.innerHTML = "What tasks do you need to complete?"
+    const div1 = document.createElement("div")
+    div1.className = "div1"
+    const taskInput = document.createElement("input")
+    taskInput.className = "input1"
+    const submit = document.createElement("button")
+    submit.type = "button"
+    submit.className = "button"
+    submit.innerHTML= "Add Task"
+    const listHeader = document.createElement("h3")
+    listHeader.className = "list-header"
+    listHeader.innerHTML = "List of Tasks"
+    const list = document.createElement("ul")
+    list.className ="task-list"
+
+    div1.append(mainHeader, taskInput, submit, listHeader, list)
+    mainDiv.append(div1)
+
+    function addTask() {
+        const list = document.querySelector(".task-list")
+        const grabInput = document.querySelector(".input1").value
+        const listItem = document.createElement("li")
+        listItem.className = "task-item"
+        const checkList = document.createElement("input")
+        checkList.className = "check-list"
+        checkList.type = "checkbox"
+        listItem.append(checkList, grabInput)
+        list.append(listItem)
+    }
+
+    submit.addEventListener("click", function() {
+        addTask()
+    })
+</script>
+</html>

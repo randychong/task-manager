@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: #c6ffdd;
+  background: -webkit-linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
+  background: linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
+}
+
+.div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: white;
+  border-radius: 5px;
+}
+
+.button {
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 1rem;
+}
+
+.list-header {
+  font-size: 20px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: center;
+}
