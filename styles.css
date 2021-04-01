@@ -29,6 +29,13 @@ body {
 .button {
   font-family: "Ubuntu", sans-serif;
   margin-top: 1rem;
+  background: white;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 16px;
+  border-radius: 1rem;
+  height: 1.5rem;
+  width: 6rem;
 }
 
 .list-header {
@@ -39,5 +46,21 @@ body {
   display: flex;
   flex-direction: column;
   list-style: none;
-  align-items: center;
+}
+
+.task-input {
+  border-style: solid;
+  outline: none;
+  border-width: 1px;
+  height: 1.5rem;
+  width: 12rem;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background: rgb(248, 245, 245);
+}
+
+footer {
+  text-align: right;
 }
